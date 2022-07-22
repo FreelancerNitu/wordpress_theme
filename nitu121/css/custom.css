@@ -1,0 +1,685 @@
+/*========================== 
+     Common CSS
+===========================*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --pink:#ea1a70;
+}
+body{
+  font-size: 15px;
+  line-height: 1.5em;
+}
+p{
+  font-size: 15px;
+  line-height: 1.5em;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* for logo img */
+.col-md-3 img {
+	padding: 20px 0;
+}
+a.readmore, input[type="submit"].submit {
+	background: var(--pink);
+	color: #fff;
+	font-size: 18px;
+	display: inline-block;
+	padding: 6px 21px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: .5s;
+  border: 0px;
+}
+a.readmore:hover, input[type="submit"].submit:hover{
+  background: black;
+  color: #fff;
+}
+.button {
+	background: var(--pink);
+	color: #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+}
+.title h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: cursive;
+	position: relative;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.title h1::before {
+	content: '';
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	background: red;
+	width: 100px;
+	height: 4px;
+	display: block;
+	transform: translateY(32px);
+	border-radius: 5px;
+}
+/*==================================
+       Bxslider starts here 
+ ==================================*/
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+	width: 100%;
+}
+/*===================================
+        Bxslider ends here 
+ ==================================*/
+
+/*==============================
+    header area starts here
+===============================*/
+#header_area{
+  padding: 15px 0;
+  box-shadow:0 2px 6px 0 rgb(0 0 0 / 12%);
+}
+#header_area .col-md-9 ul {
+	font-family: "Oswald", sans-serif;
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+#header_area .col-md-9 ul li {
+  display: inline-block;
+  position: relative;
+}
+#header_area .col-md-9 ul li a span{
+  display: block;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--pink);
+  
+}
+#header_area .col-md-9 ul li a {
+	color: #0bff3d;
+	padding: 20px 10px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-align: center;
+	transition: .3s;
+	text-decoration: none;
+}
+#header_area .col-md-9 ul li a:hover{
+  background-color: black;
+}
+#header_area .col-md-9 ul li a:hover {
+  background: var(--pink);
+  color: #fff;
+}
+
+/*Dropdown Menu*/
+
+#header_area .col-md-9 ul li ul {
+  background: #262626 none repeat scroll 0 0;
+  left: -99999px;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  top: 62px;
+  width: 200px;
+  z-index: 99999;
+}
+#header_area .col-md-9 ul li:hover ul {
+  left: 0px;
+}
+#header_area .col-md-9 ul li ul li {
+  display: block;
+}
+#header_area .col-md-9 ul li ul li a {
+  color: #fff;
+  padding: 8px 10px;
+}
+#header_area .col-md-9 ul li ul li a:hover {
+  background: #ddd;
+  color: #262626;
+}
+#header_area .col-md-9 ul li:hover a {
+  background: var(--pink);
+  color: #fff;
+}
+#header_area .col-md-9 ul li:hover ul li a {
+  background: none;
+  color: #fff;
+}
+
+/*Sub Dropdown Menu*/
+
+#header_area .col-md-9 ul li ul ul {
+  left: -99999px;
+  top: 0;
+  position: absolute;
+}
+#header_area .col-md-9 ul li:hover ul li ul {
+  left: -999999px;
+}
+#header_area .col-md-9 ul li ul li:hover ul {
+  left: 200px;
+}
+#header_area .col-md-9 ul li ul li:hover a {
+  background: var(--pink);
+  color: #fff;
+}
+#header_area .col-md-9 ul ul li:hover ul li a {
+  background: #262626;
+  color: #fff;
+}
+#header_area .col-md-9 ul ul li ul li a:hover {
+  background: var(--pink);
+  color: #fff;
+}
+/*==============================
+    header area ends here
+===============================*/
+
+/*========================================
+       Menu Position starts here
+==========================================*/
+#header_area.left_menu .col-md-3{
+  order: 2;
+}
+#header_area.left_menu .col-md-9{
+  order: 1;
+}
+#header_area.left_menu .col-md-9 ul{
+  text-align: left;
+}
+
+#header_area.center_menu .col-md-3{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#header_area.center_menu .col-md-9{
+  width: 100%;
+}
+#header_area.center_menu .col-md-9 ul{
+  text-align: center;
+}
+/*========================================
+       Menu Position ends here
+==========================================*/
+
+/*========================================
+       index page starts here
+==========================================*/
+#body_area{
+  padding: 45px 0;
+}
+#body_area .blog_area {
+	width: 100%;
+	margin-bottom: 15px;
+	background: #dddddd54;
+	padding: 5px 15px;
+}
+#body_area .post_thumb {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 15px;
+	/* border: 5px solid #ddd; */
+}
+#body_area .post_thumb img {
+	transition: .5s;
+	width: 100%;
+	display: block;
+	height: auto;
+}
+#body_area .post_thumb:hover img{
+  transform: scale(1.1);
+}
+#body_area .post-details {
+	width: 100%;
+  padding: 0;
+}
+#body_area .post-details p span{
+	display: inline-block;
+	margin: 0 5px;
+
+}
+#body_area .post-details img {
+	max-width: 100%;
+	height: auto;
+}
+#body_area .post-details div {
+	width: 100% !important;
+	margin: 10px 0px;
+}
+#body_area .post-details h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: 30px;
+	padding: 0px;
+}
+#body_area .post-details h2 a{
+ color: #262626;
+ text-decoration: none;
+ transition: .3s;
+ }
+ #body_area .post-details h2 a:hover{
+  color: var(--pink);
+  }
+
+/*========================================
+       index page ends here
+==========================================*/
+
+/*========================================
+       Sidebar starts here
+==========================================*/
+#body_area .child_sidebar {
+	margin-bottom: 20x;
+	margin: 15px 0;
+}
+#body_area .child_sidebar h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  line-height: 1em;
+  border-left: 3px solid var(--pink);
+	padding-left: 10px;
+ }
+ #body_area .child_sidebar input[type="search"] {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 5px 5px;
+}
+#body_area .child_sidebar button[type="submit"] {
+	background: var(--pink);
+	border: 1px solid var(--pink);
+	padding: 5px 5px;
+  margin: 0;
+  color: #fff;
+  transition: .5s;
+}
+#body_area .child_sidebar button[type="submit"]:hover {
+  background: #262626;
+	border: 1px solid #262626;
+}
+#body_area .child_sidebar ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.wp-block-latest-posts__featured-image img {
+	width: 100px;
+	height: 100px;
+	border-radius: 3px;
+	padding: 0;
+	margin: 0;
+}
+#body_area .child_sidebar ul li {
+	display: flex;
+	margin-bottom: 5px;
+	background: #ddd;
+	border-radius: 5px;
+	padding: 6px;
+	margin-top: 5px;
+	font-weight: bold;
+	flex-direction: column;
+	text-align: center;
+}
+#body_area .child_sidebar ul li div {
+	display: block;
+	font-size: .8125em;
+	padding: 0 5px;
+	font-weight: 500;
+}
+#body_area .child_sidebar ul li a{
+  display: inline-block;
+  color: #262626;
+  text-decoration: none;
+  transition: .3s;
+}
+#body_area .child_sidebar ul li a:hover{
+  color: var(--pink);
+}
+#body_area .child_sidebar a.tag-cloud-link {
+	color: #fff;
+	text-decoration: none;
+	background: #262626;
+	padding: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+	font-size: 14px !important;
+	transition: .5s;
+	border-radius: 5px;
+}
+#body_area .child_sidebar a.tag-cloud-link:hover {
+	background: var(--pink);
+}
+.wp-block-media-text__media img, .wp-block-media-text__media video {
+	max-width: unset;
+	width: 100%;
+	vertical-align: middle;
+	height: 150px;
+}
+/*========================================
+       Sidebar ends here
+==========================================*/
+
+/*========================================
+     Pagenav starts here
+==========================================*/
+
+#page_nav p.pages {
+	background: var(--pink);
+	color: #fff;
+	padding: 5px 3px;
+}
+#page_nav p.pages span {
+  display: inline-block;
+  padding: 0 5px;
+}
+#page_nav .page-numbers {
+	background: var(--pink);
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 12px;
+	color: #fff;
+	margin-right: 5px;
+  transition: .3s;
+}
+#page_nav .page-numbers.current, #page_nav .page-numbers:hover{
+  background-color: #262626;
+}
+/*========================================
+     Pagenav ends here
+==========================================*/
+
+/*========================================
+     Archive and Search section starts here
+==========================================*/
+
+#archive_title, #search_title {
+  background-color: var(--pink);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#archive_title h1, #search_title h1{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+/*========================================
+     Archive and Search section ends here
+==========================================*/
+
+/*========================================
+    404 section starts here
+==========================================*/
+.error_page{
+  padding: 50px 0;
+  text-align: center;
+}
+.error_page p{
+  color: var(--pink);
+  margin-bottom: 0;
+}
+.error_page h1{
+  color: #262626;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+.error_search{
+  margin-bottom: 15px;
+}
+.error_page a.homepage {
+	background-color: var(--pink);
+	color: #FFF;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 20px;
+  transition: .3s;
+}
+.error_page a.homepage:hover {
+	background-color: #262626;
+	color: #FFF;
+}
+.error_search input[type="text"]{
+  background: #fff;
+	border: 1px solid #ddd;
+	padding: 5px 5px;
+}
+.error_search input[type="submit"]{
+  background: var(--pink);
+	border: 1px solid var(--pink);
+	padding: 5px 5px;
+  margin: 0;
+  color: #fff;
+  transition: .5s;
+}
+.error_search input[type="submit"]:hover {
+  background: #262626;
+	border: 1px solid #262626;
+}
+/*========================================
+     404 section ends here
+==========================================*/
+
+/*========================================
+     Comments starts here
+==========================================*/
+#comment_area h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+#comment_area label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+}
+#comment_area input[type="checkbox"] {
+	display: inline-block;
+  width: auto;
+	
+}
+#comment_area textarea, 
+#comment_area input[type="text"] {
+	border: 1px solid #ddd;
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+}
+#comment_area textarea {
+	min-height: 150px;
+}
+.comment-form-cookies-consent {
+	display: flex;
+}
+.comment-form-cookies-consent label {
+	margin: 0px 13px;
+}
+/*========================================
+     Comments ends here
+==========================================*/
+
+/*========================================
+     Service area starts here
+==========================================*/
+
+#service_area .child_service {
+	background-color: #ddd;
+	box-shadow: 0 0 10px #ddd;
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+#service_area .child_service p i {
+  margin: 0 3px;
+}
+#service_area .child_service h2 {
+	font-family: cursive;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+#service_area .child_service img {
+	height: 200px;
+}
+
+/*========================================
+     Service area ends here
+==========================================*/
+
+/*========================================
+     Banner Section starts here
+==========================================*/
+#banner img {
+	border: 5px solid #ddd;
+}
+/*========================================
+      Banner Section ends here
+==========================================*/
+
+/*========================================
+     Widgets Shortcode area starts here
+==========================================*/
+#body_area .child_sidebar .child_service h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 0;
+	line-height: 1em;
+	padding-left: 10px;
+	border-left: none;
+}
+.child_sidebar .col-md-4 {
+	flex: 0 0 auto;
+	width: 100%!important;
+}
+
+/*========================================
+     Widgets Shortcode area ends here
+==========================================*/
+
+/*========================================
+      Footer section starts here
+==========================================*/
+#footer{
+  /* background-color: #262626; */
+	background: url(../img/fb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#footer_area .child_sidebar {
+	margin-bottom: 20x;
+	margin: 15px 0;
+}
+#footer_area .child_sidebar h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: 25px;
+	margin-bottom: 0;
+	line-height: 1em;
+	border-left: 3px solid var(--pink);
+	padding-left: 10px;
+}
+.child_sidebar h2, label {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: 25px;
+	margin-bottom: 0;
+	line-height: 1em;
+	border-left: 3px solid var(--pink);
+	padding-left: 10px;
+	margin: 5px 0;
+}
+ #footer_area .child_sidebar input[type="search"] {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 5px 5px;
+}
+#footer_area .child_sidebar button[type="submit"] {
+	background: var(--pink);
+	border: 1px solid var(--pink);
+	padding: 5px 5px;
+  margin: 0;
+  color: #fff;
+  transition: .5s;
+}
+#footer_area .child_sidebar button[type="submit"]:hover {
+  background: #262626;
+	border: 1px solid #262626;
+}
+#footer_area .child_sidebar ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+#footer_area .child_sidebar ul li {
+	display: block;
+	margin-bottom: 5px;
+}
+#footer_area .child_sidebar ul li a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	transition: .3s;
+}
+#footer_area .child_sidebar ul li a:hover{
+  color: var(--pink);
+}
+/*========================================
+      Footer section ends here
+==========================================*/
+
+
+/*========================================
+      Copyright section starts here
+==========================================*/
+#copyright_area{
+  background-color: #262626;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+#copyright_area p{
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+}
+#copyright_area p a{
+  color: var(--pink);
+}
+#copyright_area p a:hover{
+  color: var(--pink);
+  text-decoration: underline;
+}
+/*========================================
+      Copyright section ends here
+==========================================*/
